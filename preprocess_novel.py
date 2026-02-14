@@ -7,7 +7,7 @@ from pathlib import Path
 nlp = spacy.load("zh_core_web_sm") 
 
 # 预定义小说人物词典（避免NLP漏识别）
-CHARACTER_DICT = ["林黛玉", "贾宝玉", "薛宝钗", "王熙凤", "诸葛亮", "曹操"] 
+CHARACTER_DICT = ["林黛玉", "贾宝玉", "薛宝钗", "王熙凤"] 
 
 def extract_characters(text):
     """提取文本中出现的人物（结合词典+NER）"""
